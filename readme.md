@@ -1,4 +1,4 @@
-#QUANTUM-JVM-LIB
+# QUANTUM-JVM-LIB
 
 ## Overview
 Quantum JVM Library is a modular quantum computing framework designed for the Java ecosystem, 
@@ -16,19 +16,19 @@ as solutions to classical computing shortcomings.
 C++ has been selected to build the library core due to the following 
 considerations
 
-# Performance:  
+### Performance:  
 Quantum simulation involves heavy linear algebra (matrix multiplications, tensor products, complex numbers). 
 C++ gives you speed and low‑level memory control that Java alone can’t match.
 
-# Numerical Libraries:  
+### Numerical Libraries:  
 You can leverage existing C++ libraries (like Eigen, Armadillo, or BLAS/LAPACK)
 for efficient matrix operations. These are battle‑tested in scientific computing.
 
-# Fine‑grained control:  
+### Fine‑grained control:  
 Quantum states are vectors of complex amplitudes. C++ lets you manage them directly, 
 optimize memory layout, and avoid garbage collection overhead.
 
-#Portability:  
+### Portability:  
 A C++ core can be compiled into native libraries and reused across languages (Java, Python, Rust).
 With JNI, Java developers get access without sacrificing speed.
 
@@ -39,46 +39,46 @@ later on the project can give insights on how to secure Java Enterprise applicat
 With Quantum cryptos.
 
 ## Milestones and study roadmap
-# Milestone 1
+### Milestone 1
 study Qubits, dirac notation, superposition
 implement Qubits in Cpp
 create JNI wrapper for Qubits
 
-# Milestone 2
+### Milestone 2
 Study Entanglement and basic gates
 implement the gates Cpp class
 Test entaglement with Qubit states
 Create JNI wrapper for Gates
 
-# Milestone 3
+### Milestone 3
 Study Quantum circuits and Deutsch-Jozsa algorithm
 Build circuit class (sequence of gates)
 implement Deutsch-Jozsa and Berstein vazirani algorithms
 Expose endpoints to java 
 
-# Milestone 4
+### Milestone 4
 study grover's search algorithm
 implement grover algorithm using the circuit class
 JNI wrapper Grover.run()
 
-# Milestone 5
+### Milestone 5
 Study the QFT algorithm
 implement QFT in C++ and integrate into circuit class
 JNI wrapper QFT.run()
 
-# Milestone 6
+### Milestone 6
 Study shor's algorithm
 implement simplified shor in Cpp
 JNI wrapper Shor.run ()
 
-# Milestone 7
+### Milestone 7
 Learn the quantum teleportation (register to register) (entaglement + classical communication)
 implement Teleportation module in C++
 extend register class to handle entangled pairs
 create a JNI wrapper
 teleport a qubit state between registers
 
-# Milestone 8
+### Milestone 8
 study VQE and QAOA
 focus on how classical optimization loops interact
 with quantum circuits
@@ -86,12 +86,12 @@ implement VQE modules in Cpp (Hamiltonians)
 add interface for classical optimizers (gradient descents)
 create JNI wrapper
 
-# Milestone 9
+### Milestone 9
 Learn Simon'S algorithms (hidden XOR mask problem)
 Understand Simon's exponential speed up on classical algorithms
 implement simon module
 extend circuit to handle oracle functions
 create JNI wrapper
 
-# Milestone 10
+### Milestone 10
 Other Physics inspired extenstions.
