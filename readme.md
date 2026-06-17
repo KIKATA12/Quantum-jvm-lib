@@ -40,58 +40,58 @@ With Quantum cryptos.
 
 ## Milestones and study roadmap
 ### Milestone 1
-study Qubits, dirac notation, superposition
-implement Qubits in Cpp
-create JNI wrapper for Qubits
++ study Qubits, dirac notation, superposition
++ implement Qubits in Cpp
++ create JNI wrapper for Qubits
 
 ### Milestone 2
-Study Entanglement and basic gates
-implement the gates Cpp class
-Test entaglement with Qubit states
-Create JNI wrapper for Gates
++ Study Entanglement and basic gates
++ Implement the gates Cpp class
++ Test entaglement with Qubit states
++ Create JNI wrapper for Gates
 
 ### Milestone 3
-Study Quantum circuits and Deutsch-Jozsa algorithm
-Build circuit class (sequence of gates)
-implement Deutsch-Jozsa and Berstein vazirani algorithms
-Expose endpoints to java 
++ Study Quantum circuits and Deutsch-Jozsa algorithm
++ Build circuit class (sequence of gates)
++ implement Deutsch-Jozsa and Berstein vazirani algorithms
++ Expose endpoints to java 
 
 ### Milestone 4
-study grover's search algorithm
-implement grover algorithm using the circuit class
-JNI wrapper Grover.run()
++ study grover's search algorithm
++ implement grover algorithm using the circuit class
++ JNI wrapper Grover.run()
 
 ### Milestone 5
-Study the QFT algorithm
-implement QFT in C++ and integrate into circuit class
-JNI wrapper QFT.run()
++ Study the QFT algorithm
++ implement QFT in C++ and integrate into circuit class
++ JNI wrapper QFT.run()
 
 ### Milestone 6
-Study shor's algorithm
-implement simplified shor in Cpp
-JNI wrapper Shor.run ()
++ Study shor's algorithm
++ implement simplified shor in Cpp
++ JNI wrapper Shor.run ()
 
 ### Milestone 7
-Learn the quantum teleportation (register to register) (entaglement + classical communication)
-implement Teleportation module in C++
-extend register class to handle entangled pairs
-create a JNI wrapper
-teleport a qubit state between registers
++ Learn the quantum teleportation (register to register) (entaglement + classical communication)
++ implement Teleportation module in C++
++ extend register class to handle entangled pairs
++ create a JNI wrapper
++ teleport a qubit state between registers
 
 ### Milestone 8
-study VQE and QAOA
-focus on how classical optimization loops interact
-with quantum circuits
-implement VQE modules in Cpp (Hamiltonians)
-add interface for classical optimizers (gradient descents)
-create JNI wrapper
++ study VQE and QAOA
++ focus on how classical optimization loops interact
++ with quantum circuits
++ implement VQE modules in Cpp (Hamiltonians)
++ add interface for classical optimizers (gradient descents)
++ create JNI wrapper
 
 ### Milestone 9
-Learn Simon'S algorithms (hidden XOR mask problem)
-Understand Simon's exponential speed up on classical algorithms
-implement simon module
-extend circuit to handle oracle functions
-create JNI wrapper
++ Learn Simon'S algorithms (hidden XOR mask problem)
++ Understand Simon's exponential speed up on classical algorithms
++ implement simon module
++ extend circuit to handle oracle functions
++ create JNI wrapper
 
 ### Milestone 10
-Other Physics inspired extenstions.
++ Other Physics inspired extenstions.
