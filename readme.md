@@ -39,7 +39,7 @@ later on the project can give insights on how to secure Java Enterprise applicat
 With Quantum cryptos.
 
 ## Milestones and study roadmap
-### Milestone 1
+### Milestone 1 🚩 
 + study Qubits, dirac notation, superposition
 + implement Qubits in Cpp
 + create JNI wrapper for Qubits
