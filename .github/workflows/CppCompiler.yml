@@ -36,7 +36,6 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
            
       - name: compile in windows
-        shell: msys2 {0}
         run: |
              cl /EHsc /std:c++17 /I"%JAVA_HOME%\include" /I"%JAVA_HOME%\include\win32" /c core\qubit\Qubit.cpp /Fo:build\Qubit.obj
              cl /EHsc /std:c++17 /I"%JAVA_HOME%\include" /I"%JAVA_HOME%\include\win32" /c jni\QubitBridge.cpp /Fo:build\QubitBridge.obj
