@@ -2,7 +2,7 @@
 #include "../core/qubit/Qubit.h"
 
 extern "C" JNIEXPORT jlong JNICALL
-Java_wrappers_Qubit_qubitMeasure(JNIEnv* env, jobject obj){
+Java_wrappers_Qubit_qubitCreate(JNIEnv* env, jobject obj){
   Qubit* q = new Qubit();
   return reinterpret_cast<jlong>(q);
 }
