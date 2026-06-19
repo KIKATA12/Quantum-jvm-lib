@@ -4,7 +4,6 @@ import wrappers.Qubit;
 
 public class QubitTest {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
     if (args.length == 0){
       System.out.println("Usage: java demos.QubitTest <create|initialize|measure|reset|free> [state}");  
       return;
@@ -31,7 +30,7 @@ public class QubitTest {
               System.out.println("Qubit freed automatically at close.");
               break;
            default:
-              System.out.println("Unknown operation: " + choice);
+              System.out.println("Unknown operation: ");
         }
     }
   }
