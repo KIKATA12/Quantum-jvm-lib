@@ -31,8 +31,10 @@ jobs:
 
       - name: Compile qubit sources
         run: |
-           g++ -std=c++17 -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -c core/qubit/Qubit.cpp -o build/Qubit.o
-           g++ -std=c++17 -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -c jni/QubitBridge.cpp -o build/QubitBridge.o
+           g++ -std=c++17 -fPIC \
+            -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" \
+            -shared core/qubit/Qubit.cpp jni/QubitBridge.cpp \
+            -o build/libQubitNative.so
         if: matrix.os == 'ubuntu-latest'
            
       #- name: compile in windows
@@ -44,7 +46,7 @@ jobs:
       - name: Build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: Build_files
-          path: build/
+          name: qubit-native-lib
+          path: build/libQubitNative.so
      
  
