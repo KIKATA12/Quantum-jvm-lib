@@ -17,7 +17,7 @@ public class Qubit implements AutoCloseable {
   public void reset(){
     qubitReset(nativePtr);
   }
-  @override
+  @Override
   public void close(){
     if (nativePtr != 0){
       qubitFree(nativePtr);
