@@ -28,7 +28,7 @@ jobs:
           javac wrappers/*.java Demos/*.java
       - name: Run qubit demo
         run: |
-          java -Djava.library.path=$LIB_PATH -cp ./wrappers:./Demos Demos.QubitTest \
+          java -Djava.library.path=$LIB_PATH -cp ./wrappers: ./Demos Demos.QubitTest \
           ${{ github.event.inputs.operation }} ${{ github.event.inputs.state }}
       - name: list compiled classes
         run: |
