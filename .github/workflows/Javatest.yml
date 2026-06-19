@@ -1,0 +1,33 @@
+name: test java files
+on: 
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: "(create, initialize, measure, reset, free)"
+        required: true
+        default: "create"
+      state:
+        description: "(0 or 1)"
+        required: false
+        default: "" 
+jobs:
+  run-demo:
+    runs-on: ubuntu-latest
+    env:
+      LIB_PATH: root/lib
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+      - name: set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+      - name: compile wrappers and demos
+        run: |
+          javac wrappers/*.java demos/*.java
+      - name: Run qubit demo
+        run: |
+          java -Djava.library.path=$LIB_PATH -cp ./wrappers:./demos demos.QubitTest \
+          ${{ github.event.inputs.operation }} ${{ github.event.inputs.state }}
+          
