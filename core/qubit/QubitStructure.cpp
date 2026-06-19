@@ -1,5 +1,4 @@
 #include "QubitStructure.h"
-#include <complex>
 #include <utility>
 #include <cmath>
 /** 
