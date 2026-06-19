@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin'
           java-version: '25'
       - name: create build directory
-        run: mkdir build
+        run: mkdir Sharedlib
         
       #- name: windows dependencies
        # if: matrix.os == 'windows-latest' 
