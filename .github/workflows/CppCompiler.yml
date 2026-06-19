@@ -38,6 +38,13 @@ jobs:
            g++ -std=c++17 -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -c jni/QubitBridge.cpp -o build/QubitBridge.o
         if: matrix.os == 'ubuntu-latest'
 
+      - name: Verify JDK headers
+        shell: msys2 {0}
+        run: |
+           echo "JAVA_HOME is $JAVA_HOME"
+           ls $JAVA_HOME/include
+           ls $JAVA_HOME/include/win32
+           
       - name: compile in windows
         shell: msys2 {0}
         run: |
