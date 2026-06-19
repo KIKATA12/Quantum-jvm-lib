@@ -37,7 +37,7 @@ jobs:
            
       - name: compile in windows
         run: |
-             cl /EHsc /std:c++17 /I"%JAVA_HOME%\include" /I"%JAVA_HOME%\include\win32" /c core\qubit\Qubit.cpp /Fo:build\Qubit.obj
-             cl /EHsc /std:c++17 /I"%JAVA_HOME%\include" /I"%JAVA_HOME%\include\win32" /c jni\QubitBridge.cpp /Fo:build\QubitBridge.obj
+             cl /EHsc /std:c++17 /I"%JAVA_HOME\include" /I"%JAVA_HOME\include\win32" /c core\qubit\Qubit.cpp /Fo:build\Qubit.obj
+             cl /EHsc /std:c++17 /I"%JAVA_HOME\include" /I"%JAVA_HOME\include\win32" /c jni\QubitBridge.cpp /Fo:build\QubitBridge.obj
         if: matrix.os == 'windows-latest'
  
