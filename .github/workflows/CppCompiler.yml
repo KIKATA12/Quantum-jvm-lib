@@ -41,7 +41,7 @@ jobs:
       - name: compile in windows
         shell: msys2 {0}
         run: |
-            g++ -std=c++17 -I"%JAVA_HOME%/include" -I"%JAVA_HOME%/include/win32" -c core/qubit/Qubit.cpp -o build/Qubit.o
-            g++ -std=c++17 -I"%JAVA_HOME%/include" -I"%JAVA_HOME%/include/win32" -c jni/QubitBridge.cpp -o build/QubitBridge.o
+            g++ -std=c++17 -I"%JAVA_HOME/include" -I"%JAVA_HOME/include/win32" -c core/qubit/Qubit.cpp -o build/Qubit.o
+            g++ -std=c++17 -I"%JAVA_HOME/include" -I"%JAVA_HOME/include/win32" -c jni/QubitBridge.cpp -o build/QubitBridge.o
         if: matrix.os == 'windows-latest'
  
