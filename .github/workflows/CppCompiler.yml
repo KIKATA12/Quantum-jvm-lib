@@ -23,10 +23,7 @@ jobs:
         
       - name: windows dependencies
         if: matrix.os == 'windows-latest' 
-        uses: msys2/setup-msys2@v2
-        with:
-           update: true
-           install: mingw-w64-x86_64-gcc make
+        uses: ilammy/msvc-dev-cmd@v1
 
       - name: linux dependencies
         if: matrix.os == 'ubuntu-latest'
@@ -37,18 +34,11 @@ jobs:
            g++ -std=c++17 -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -c core/qubit/Qubit.cpp -o build/Qubit.o
            g++ -std=c++17 -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -c jni/QubitBridge.cpp -o build/QubitBridge.o
         if: matrix.os == 'ubuntu-latest'
-
-      - name: Verify JDK headers
-        shell: msys2 {0}
-        run: |
-           echo "JAVA_HOME is $JAVA_HOME"
-           ls $JAVA_HOME/include
-           ls $JAVA_HOME/include/win32
            
       - name: compile in windows
         shell: msys2 {0}
         run: |
-            g++ -std=c++17 -I"%JAVA_HOME/include" -I"%JAVA_HOME/include/win32" -c core/qubit/Qubit.cpp -o build/Qubit.o
-            g++ -std=c++17 -I"%JAVA_HOME/include" -I"%JAVA_HOME/include/win32" -c jni/QubitBridge.cpp -o build/QubitBridge.o
+             cl /EHsc /std:c++17 /I"%JAVA_HOME%\include" /I"%JAVA_HOME%\include\win32" /c core\qubit\Qubit.cpp /Fo:build\Qubit.obj
+             cl /EHsc /std:c++17 /I"%JAVA_HOME%\include" /I"%JAVA_HOME%\include\win32" /c jni\QubitBridge.cpp /Fo:build\QubitBridge.obj
         if: matrix.os == 'windows-latest'
  
