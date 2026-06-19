@@ -1,4 +1,4 @@
-#include "QubitStructure.h"
+#include "Qubit.h"
 #include <utility>
 #include <cmath>
 /** 
@@ -8,9 +8,9 @@ where
   + 𝛼,𝛽∈𝐶 (complex numbers)
   + ∣𝛼∣²+∣𝛽∣²=1(normalization)
 **/
-QubitStructure::QubitStructure() : alpha (1.0, 0.0), beta(0.0, 0.0), active(true) {}
+Qubit::Qubit() : alpha (1.0, 0.0), beta(0.0, 0.0), active(true) {}
 //normalization
-void QubitStructure::normalize() {
+void Qubit::normalize() {
   double norm = std::sqrt(std::norm(alpha) + std::norm(beta))
   if(norm > 0){
     alpha /= norm;
@@ -18,7 +18,7 @@ void QubitStructure::normalize() {
 }
 }
 //initialize
-void QubitStructure::initialize (int state){
+void Qubit::initialize (int state){
   if (state == 0) {
     alpha = {1.0, 0.0};
     beta = {0.0, 0.0};
@@ -28,7 +28,7 @@ void QubitStructure::initialize (int state){
   }    
 }
 //measuring should collapse to 0 / 1
-int QubitStructure::measure() {
+int Qubit::measure() {
   double p0 = std::norm(alpha);
   double randVal = (double)rand() / RAND_MAX;
   if (randVal < p0 ) {
@@ -40,11 +40,11 @@ int QubitStructure::measure() {
   }
 }
 //Reset
-void QubitStructure::reset() { initialize(0); }
-void QubitStructure::free() { active = false; } //free memory (simulator abstraction)
-void QubitStructure::release() {active = false; } // free memory, keep amplitudes
+void Qubit::reset() { initialize(0); }
+void Qubit::free() { active = false; } //free memory (simulator abstraction)
+void Qubit::release() {active = false; } // free memory, keep amplitudes
 //get amplitudes
-std::pair<std::complex<double>, std::complex<double>>QubitStructure::getState() {
+std::pair<std::complex<double>, std::complex<double>>Qubit::getState() {
 return {alpha, beta};
 }
 
