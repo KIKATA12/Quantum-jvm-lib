@@ -1,0 +1,40 @@
+name: CppCompiler
+on: 
+   push:
+     branches: ["main"]
+   pull_request:
+     branches: ["main"]
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os}}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      -name: windows dependencies
+      if: matrix.os == 'windows-latest'
+      uses: msys2/setup-msys2@v2
+      with:
+        update: true
+        install: mingw-w64-x86_64-gcc make
+
+      -name: linux dependencies
+      if: matrix.os == 'ubuntu-latest'
+      run: sudo apt-get update && sudo apt-get install -y g++
+
+      -name: Compile qubit sources
+      run: |
+        g++ -std=c++17 -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -c core/qubit/Qubit.cpp -o build/Qubit.o
+        g++ -std=c++17 -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -c jni/QubitBridge.cpp -o build/QubitBridge.o
+      if: matrix.os == 'ubuntu-latest'
+
+      -name: compile in windows
+      shell: msys2 {0}
+      run: |
+         g++ -std=c++17 -I"%JAVA_HOME%/include" -I"%JAVA_HOME%/include/win32" -c core/qubit/Qubit.cpp -o build/Qubit.o
+         g++ -std=c++17 -I"%JAVA_HOME%/include" -I"%JAVA_HOME%/include/win32" -c jni/QubitBridge.cpp -o build/QubitBridge.o
+      if: matrix.os == 'windows-latest'
+ 
