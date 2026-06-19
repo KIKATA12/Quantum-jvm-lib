@@ -11,7 +11,7 @@ where
 Qubit::Qubit() : alpha (1.0, 0.0), beta(0.0, 0.0), active(true) {}
 //normalization
 void Qubit::normalize() {
-  double norm = std::sqrt(std::norm(alpha) + std::norm(beta))
+  double norm = std::sqrt(std::norm(alpha) + std::norm(beta));
   if(norm > 0){
     alpha /= norm;
     beta /= norm;
