@@ -3,7 +3,7 @@
 #include <complex>
 #include <utility>
 
-class QubitStructure {
+class Qubit {
 private:
 std::complex<double> alpha;
 std::complex<double> beta;
@@ -11,7 +11,7 @@ bool active;
 void normalize();
 
 public:
-QubitStructure();
+Qubit();
 void initialize(int state);
 int measure();
 void reset();
