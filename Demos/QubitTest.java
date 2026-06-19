@@ -1,4 +1,4 @@
-package demos;
+package Demos;
 
 import wrappers.Qubit;
 
