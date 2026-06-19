@@ -34,7 +34,7 @@ jobs:
            g++ -std=c++17 -fPIC \
             -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" \
             -shared core/qubit/Qubit.cpp jni/QubitBridge.cpp \
-            -o build/libQubitNative.so
+            -o Sharedlib/libQubitNative.so
         if: matrix.os == 'ubuntu-latest'
            
       #- name: compile in windows
