@@ -4,29 +4,34 @@ public class Qubit implements AutoCloseable {
  static {
    System.loadLibrary("QubitNative");
  }
+  private int id;
+  private boolean active;
   private long nativePtr;
-  public Qubit() {
-    nativePtr = qubitCreate();
-  }
-  public void initialize(int state){
-    qubitInitialize(nativePtr, state);
+ 
+  public Qubit(int state) {
+    this.id = createQubit(state);
+    this.active = true;
   }
   public int measure(){
-    return qubitMeasure(nativePtr);
+    return measureQubit(id);
   }
   public void reset(){
-    qubitReset(nativePtr);
+    resetQubit(id);
   }
+  public void release(){
+   if (active) {
+     releaseQubit(id);
+    active = false;
+   }
+  }
+ 
   @Override
   public void close(){
-    if (nativePtr != 0){
-      qubitFree(nativePtr);
-      nativePtr = 0;
-    }
+    release();
   }
-  private native long qubitCreate();
-  private native void qubitInitialize(long ptr, int state);
-  private native int qubitMeasure(long ptr);
-  private native void qubitReset(long ptr);
-  private native void qubitFree(long ptr);
+ 
+  private native int createQubit(int state);
+  private native int measureQubit(int id);
+  private native void resetQubit(int id);
+  private native void releaseQubit(int id);
 }
