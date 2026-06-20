@@ -31,12 +31,12 @@ public class emulator {
     System.out.print("Enter initial state: ");
     int state = scanner.nextInt();
     Qubit q = new Qubit(state);
-    qubits.put(q.hasCode(), q);
+    qubits.put(q.hashCode(), q);
     System.out.println("Qubit created at " + new Date() + "with ID " + q.hashCode());
   }
   private static void manageQubits() {
     if (qubits.isEmpty()) {
-      System.ou.println("No qubits available");
+      System.out.println("No qubits available");
       return;
     }
     System.out.println("Qubits:");
