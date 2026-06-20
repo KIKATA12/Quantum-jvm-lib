@@ -29,7 +29,7 @@ jobs:
           javac -d bin wrappers/*.java demos/*.java
       - name: Run qubit demo
         run: |
-         java -Djava.library.path=$LIB_PATH -cp bin demos.QubitTest \
+         java -Djava.library.path=$LIB_PATH -cp bin demos.emulator \
          ${{ github.event.inputs.operation }} ${{ github.event.inputs.state }}
       - name: list compiled classes
         run: |
