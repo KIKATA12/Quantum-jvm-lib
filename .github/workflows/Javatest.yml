@@ -1,15 +1,5 @@
 name: test java files
-on: 
-  workflow_dispatch:
-    inputs:
-      operation:
-        description: "(create, initialize, measure, reset, free)"
-        required: true
-        default: "create"
-      state:
-        description: "(0 or 1)"
-        required: false
-        default: "" 
+on: workflow_dispatch
 jobs:
   run-demo:
     runs-on: ubuntu-latest
