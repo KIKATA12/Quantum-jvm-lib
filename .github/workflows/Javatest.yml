@@ -25,10 +25,10 @@ jobs:
           distribution: 'temurin'
       - name: compile wrappers and demos
         run: |
-          javac wrappers/*.java Demos/*.java
+          javac wrappers/*.java demos/*.java
       - name: Run qubit demo
         run: |
-          java -Djava.library.path=$LIB_PATH -cp ./wrappers: ./Demos Demos.QubitTest \
+          java -Djava.library.path=$LIB_PATH -cp ./wrappers: ./demos demos.QubitTest \
           ${{ github.event.inputs.operation }} ${{ github.event.inputs.state }}
       - name: list compiled classes
         run: |
