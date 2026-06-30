@@ -1,0 +1,3 @@
+/home/redhood/quantum-jvm-lib/build/CMakeFiles/QubitNative.dir
+/home/redhood/quantum-jvm-lib/build/CMakeFiles/edit_cache.dir
+/home/redhood/quantum-jvm-lib/build/CMakeFiles/rebuild_cache.dir

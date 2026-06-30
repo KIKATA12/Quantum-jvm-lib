@@ -95,3 +95,10 @@ With Quantum cryptos.
 
 ### Milestone 10
 + Other Physics inspired extenstions.
+ 
+## CMake compilation
+
+```bash
+cmake -S . -B build
+cmake --build build --config Release
+```

@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run emulator",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "demos.emulator",
+      "projectName": "quantum-jvm-lib",
+      "vmArgs": [
+        "-Djava.library.path=${workspaceFolder}/lib"
+      ]
+    }
+  ]
+}
