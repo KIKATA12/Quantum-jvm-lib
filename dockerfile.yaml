@@ -17,6 +17,6 @@ WORKDIR /workspace
 COPY . /workspace
 
 RUN cmake -S /workspace -B /workspace/build && \
-    cmake --build /workspace/build -j$(nproc)
+    cmake --build /workspace/build -j"$(nproc)"
 
 CMD ["bash"]
