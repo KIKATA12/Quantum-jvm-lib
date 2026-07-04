@@ -13,6 +13,7 @@ void normalize();
 public:
 Qubit();
 void initialize(int state);
+void setState(const std::complex<double>& newAlpha, const std::complex<double>& newBeta);
 int measure();
 void reset();
 void free();

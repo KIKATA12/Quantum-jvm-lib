@@ -129,6 +129,78 @@ QubitNative/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/build
 .PHONY : QubitNative/fast
 
+core/gates/GateWrapper.o: core/gates/GateWrapper.cpp.o
+.PHONY : core/gates/GateWrapper.o
+
+# target to build an object file
+core/gates/GateWrapper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o
+.PHONY : core/gates/GateWrapper.cpp.o
+
+core/gates/GateWrapper.i: core/gates/GateWrapper.cpp.i
+.PHONY : core/gates/GateWrapper.i
+
+# target to preprocess a source file
+core/gates/GateWrapper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.i
+.PHONY : core/gates/GateWrapper.cpp.i
+
+core/gates/GateWrapper.s: core/gates/GateWrapper.cpp.s
+.PHONY : core/gates/GateWrapper.s
+
+# target to generate assembly for a file
+core/gates/GateWrapper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.s
+.PHONY : core/gates/GateWrapper.cpp.s
+
+core/gates/Pauli.o: core/gates/Pauli.c.o
+.PHONY : core/gates/Pauli.o
+
+# target to build an object file
+core/gates/Pauli.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o
+.PHONY : core/gates/Pauli.c.o
+
+core/gates/Pauli.i: core/gates/Pauli.c.i
+.PHONY : core/gates/Pauli.i
+
+# target to preprocess a source file
+core/gates/Pauli.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/gates/Pauli.c.i
+.PHONY : core/gates/Pauli.c.i
+
+core/gates/Pauli.s: core/gates/Pauli.c.s
+.PHONY : core/gates/Pauli.s
+
+# target to generate assembly for a file
+core/gates/Pauli.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/gates/Pauli.c.s
+.PHONY : core/gates/Pauli.c.s
+
+core/gates/Rotation.o: core/gates/Rotation.c.o
+.PHONY : core/gates/Rotation.o
+
+# target to build an object file
+core/gates/Rotation.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o
+.PHONY : core/gates/Rotation.c.o
+
+core/gates/Rotation.i: core/gates/Rotation.c.i
+.PHONY : core/gates/Rotation.i
+
+# target to preprocess a source file
+core/gates/Rotation.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/gates/Rotation.c.i
+.PHONY : core/gates/Rotation.c.i
+
+core/gates/Rotation.s: core/gates/Rotation.c.s
+.PHONY : core/gates/Rotation.s
+
+# target to generate assembly for a file
+core/gates/Rotation.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/gates/Rotation.c.s
+.PHONY : core/gates/Rotation.c.s
+
 core/qubit/Qubit.o: core/qubit/Qubit.cpp.o
 .PHONY : core/qubit/Qubit.o
 
@@ -378,6 +450,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... QubitNative"
+	@echo "... core/gates/GateWrapper.o"
+	@echo "... core/gates/GateWrapper.i"
+	@echo "... core/gates/GateWrapper.s"
+	@echo "... core/gates/Pauli.o"
+	@echo "... core/gates/Pauli.i"
+	@echo "... core/gates/Pauli.s"
+	@echo "... core/gates/Rotation.o"
+	@echo "... core/gates/Rotation.i"
+	@echo "... core/gates/Rotation.s"
 	@echo "... core/qubit/Qubit.o"
 	@echo "... core/qubit/Qubit.i"
 	@echo "... core/qubit/Qubit.s"

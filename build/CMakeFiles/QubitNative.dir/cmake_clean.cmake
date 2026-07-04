@@ -2,6 +2,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/QubitNative.dir/link.d"
   "/home/redhood/quantum-jvm-lib/lib/QubitNative.pdb"
   "/home/redhood/quantum-jvm-lib/lib/QubitNative.so"
+  "CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o"
+  "CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o.d"
+  "CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o"
+  "CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o.d"
+  "CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o"
+  "CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o.d"
   "CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o"
   "CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o.d"
   "CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o"
@@ -25,6 +31,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/QubitNative.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

@@ -1,8 +1,8 @@
-CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o: \
- /home/redhood/quantum-jvm-lib/core/registers/QubitRegistry.cpp \
+CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o: \
+ /home/redhood/quantum-jvm-lib/core/gates/GateWrapper.cpp \
  /usr/include/stdc-predef.h \
- /home/redhood/quantum-jvm-lib/core/registers/QubitRegistry.h \
- /home/redhood/quantum-jvm-lib/core/registers/../qubit/Qubit.h \
+ /home/redhood/quantum-jvm-lib/core/gates/GateWrapper.h \
+ /home/redhood/quantum-jvm-lib/core/gates/../qubit/Qubit.h \
  /usr/include/c++/15/complex \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
@@ -188,25 +188,12 @@ CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o: \
  /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/bits/ostream.tcc \
  /usr/include/c++/15/bits/istream.tcc \
  /usr/include/c++/15/bits/sstream.tcc /usr/include/c++/15/utility \
- /usr/include/c++/15/bits/stl_relops.h /usr/include/c++/15/map \
- /usr/include/c++/15/bits/stl_tree.h \
- /usr/include/c++/15/ext/aligned_buffer.h \
- /usr/include/c++/15/bits/node_handle.h \
- /usr/include/c++/15/bits/stl_map.h \
- /usr/include/c++/15/bits/stl_multimap.h \
- /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/memory \
+ /usr/include/c++/15/bits/stl_relops.h \
+ /home/redhood/quantum-jvm-lib/core/gates/GateApi.h \
+ /usr/include/c++/15/algorithm /usr/include/c++/15/bits/stl_algo.h \
+ /usr/include/c++/15/bits/algorithmfwd.h \
+ /usr/include/c++/15/bits/stl_heap.h \
+ /usr/include/c++/15/bits/uniform_int_dist.h \
  /usr/include/c++/15/bits/stl_tempbuf.h \
- /usr/include/c++/15/bits/stl_uninitialized.h \
- /usr/include/c++/15/bits/stl_raw_storage_iter.h \
- /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
- /usr/include/c++/15/bits/shared_ptr.h \
- /usr/include/c++/15/bits/shared_ptr_base.h \
- /usr/include/c++/15/bits/allocated_ptr.h \
- /usr/include/c++/15/ext/concurrence.h \
- /usr/include/c++/15/bits/shared_ptr_atomic.h \
- /usr/include/c++/15/bits/atomic_base.h \
- /usr/include/c++/15/bits/atomic_lockfree_defines.h \
- /usr/include/c++/15/backward/auto_ptr.h \
- /usr/include/c++/15/pstl/glue_memory_defs.h \
- /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/iostream \
- /home/redhood/quantum-jvm-lib/core/registers/../gates/GateWrapper.h
+ /usr/include/c++/15/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15/pstl/execution_defs.h

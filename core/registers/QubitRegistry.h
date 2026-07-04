@@ -3,6 +3,7 @@
 #include <map>
 #include <memory>
 #include <iostream>
+#include <string>
 
 class QubitRegistry {
 private:
@@ -15,4 +16,5 @@ public:
   void resetQubit(int id);
   void releaseQubit(int id);
   void printQubit(int id);
+  void superimpose(int id, const std::string& gate, double params = 0.0);
 };

@@ -27,6 +27,12 @@ void Qubit::initialize (int state){
     beta = {1.0, 0.0}; 
   }    
 }
+
+void Qubit::setState(const std::complex<double>& newAlpha, const std::complex<double>& newBeta) {
+  alpha = newAlpha;
+  beta = newBeta;
+  normalize();
+}
 //measuring should collapse to 0 / 1
 int Qubit::measure() {
   double p0 = std::norm(alpha);

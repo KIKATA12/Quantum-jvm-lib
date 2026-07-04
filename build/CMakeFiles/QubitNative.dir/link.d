@@ -1,6 +1,7 @@
 /home/redhood/quantum-jvm-lib/lib/QubitNative.so: \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
+  CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o \
   CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o \
   CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o \
   CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o \
@@ -11,6 +12,8 @@
   CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o \
   CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o \
   CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o \
+  CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o \
+  CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -40,6 +43,8 @@
 
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
+CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o:
+
 CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o:
 
 CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o:
@@ -59,6 +64,10 @@ CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o:
 CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o:
 
 CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o:
+
+CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o:
+
+CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
 

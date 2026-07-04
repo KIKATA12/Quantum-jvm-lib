@@ -72,10 +72,24 @@ include CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/codegen:
 .PHONY : CMakeFiles/QubitNative.dir/codegen
 
+CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o: CMakeFiles/QubitNative.dir/flags.make
+CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o: /home/redhood/quantum-jvm-lib/core/gates/GateWrapper.cpp
+CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o -MF CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o.d -o CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o -c /home/redhood/quantum-jvm-lib/core/gates/GateWrapper.cpp
+
+CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/redhood/quantum-jvm-lib/core/gates/GateWrapper.cpp > CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.i
+
+CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/redhood/quantum-jvm-lib/core/gates/GateWrapper.cpp -o CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.s
+
 CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o: CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o: /home/redhood/quantum-jvm-lib/core/qubit/Qubit.cpp
 CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o -MF CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o.d -o CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o -c /home/redhood/quantum-jvm-lib/core/qubit/Qubit.cpp
 
 CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.s: cmake_force
 CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o: CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o: /home/redhood/quantum-jvm-lib/core/registers/QubitRegistry.cpp
 CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o -MF CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o.d -o CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o -c /home/redhood/quantum-jvm-lib/core/registers/QubitRegistry.cpp
 
 CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.s: cmake_force
 CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o: CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o: /home/redhood/quantum-jvm-lib/jni/GroverBridge.cpp
 CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o -MF CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o.d -o CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o -c /home/redhood/quantum-jvm-lib/jni/GroverBridge.cpp
 
 CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.s: cmake_force
 CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.o: CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.o: /home/redhood/quantum-jvm-lib/jni/HHLBridge.cpp
 CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.o -MF CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.o.d -o CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.o -c /home/redhood/quantum-jvm-lib/jni/HHLBridge.cpp
 
 CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.s: cmake_force
 CMakeFiles/QubitNative.dir/jni/QFTBridge.cpp.o: CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/jni/QFTBridge.cpp.o: /home/redhood/quantum-jvm-lib/jni/QFTBridge.cpp
 CMakeFiles/QubitNative.dir/jni/QFTBridge.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/QubitNative.dir/jni/QFTBridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/QubitNative.dir/jni/QFTBridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/jni/QFTBridge.cpp.o -MF CMakeFiles/QubitNative.dir/jni/QFTBridge.cpp.o.d -o CMakeFiles/QubitNative.dir/jni/QFTBridge.cpp.o -c /home/redhood/quantum-jvm-lib/jni/QFTBridge.cpp
 
 CMakeFiles/QubitNative.dir/jni/QFTBridge.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/QubitNative.dir/jni/QFTBridge.cpp.s: cmake_force
 CMakeFiles/QubitNative.dir/jni/QubitBridge.cpp.o: CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/jni/QubitBridge.cpp.o: /home/redhood/quantum-jvm-lib/jni/QubitBridge.cpp
 CMakeFiles/QubitNative.dir/jni/QubitBridge.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/QubitNative.dir/jni/QubitBridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/QubitNative.dir/jni/QubitBridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/jni/QubitBridge.cpp.o -MF CMakeFiles/QubitNative.dir/jni/QubitBridge.cpp.o.d -o CMakeFiles/QubitNative.dir/jni/QubitBridge.cpp.o -c /home/redhood/quantum-jvm-lib/jni/QubitBridge.cpp
 
 CMakeFiles/QubitNative.dir/jni/QubitBridge.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/QubitNative.dir/jni/QubitBridge.cpp.s: cmake_force
 CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.o: CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.o: /home/redhood/quantum-jvm-lib/jni/ShorBridge.cpp
 CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.o -MF CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.o.d -o CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.o -c /home/redhood/quantum-jvm-lib/jni/ShorBridge.cpp
 
 CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.i: cmake_force
@@ -173,7 +187,7 @@ CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.s: cmake_force
 CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o: CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o: /home/redhood/quantum-jvm-lib/jni/SimonBridge.cpp
 CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o -MF CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o.d -o CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o -c /home/redhood/quantum-jvm-lib/jni/SimonBridge.cpp
 
 CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.i: cmake_force
@@ -187,7 +201,7 @@ CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.s: cmake_force
 CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o: CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o: /home/redhood/quantum-jvm-lib/jni/TeleportationBridge.cpp
 CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o -MF CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o.d -o CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o -c /home/redhood/quantum-jvm-lib/jni/TeleportationBridge.cpp
 
 CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.i: cmake_force
@@ -201,7 +215,7 @@ CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.s: cmake_force
 CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o: CMakeFiles/QubitNative.dir/flags.make
 CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o: /home/redhood/quantum-jvm-lib/jni/VQEBridge.cpp
 CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o -MF CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o.d -o CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o -c /home/redhood/quantum-jvm-lib/jni/VQEBridge.cpp
 
 CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.i: cmake_force
@@ -212,8 +226,37 @@ CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/redhood/quantum-jvm-lib/jni/VQEBridge.cpp -o CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.s
 
+CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o: CMakeFiles/QubitNative.dir/flags.make
+CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o: /home/redhood/quantum-jvm-lib/core/gates/Pauli.c
+CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o -MF CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o.d -o CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o -c /home/redhood/quantum-jvm-lib/core/gates/Pauli.c
+
+CMakeFiles/QubitNative.dir/core/gates/Pauli.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/QubitNative.dir/core/gates/Pauli.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/redhood/quantum-jvm-lib/core/gates/Pauli.c > CMakeFiles/QubitNative.dir/core/gates/Pauli.c.i
+
+CMakeFiles/QubitNative.dir/core/gates/Pauli.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/QubitNative.dir/core/gates/Pauli.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/redhood/quantum-jvm-lib/core/gates/Pauli.c -o CMakeFiles/QubitNative.dir/core/gates/Pauli.c.s
+
+CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o: CMakeFiles/QubitNative.dir/flags.make
+CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o: /home/redhood/quantum-jvm-lib/core/gates/Rotation.c
+CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o: CMakeFiles/QubitNative.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o -MF CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o.d -o CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o -c /home/redhood/quantum-jvm-lib/core/gates/Rotation.c
+
+CMakeFiles/QubitNative.dir/core/gates/Rotation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/QubitNative.dir/core/gates/Rotation.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/redhood/quantum-jvm-lib/core/gates/Rotation.c > CMakeFiles/QubitNative.dir/core/gates/Rotation.c.i
+
+CMakeFiles/QubitNative.dir/core/gates/Rotation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/QubitNative.dir/core/gates/Rotation.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/redhood/quantum-jvm-lib/core/gates/Rotation.c -o CMakeFiles/QubitNative.dir/core/gates/Rotation.c.s
+
 # Object files for target QubitNative
 QubitNative_OBJECTS = \
+"CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o" \
 "CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o" \
 "CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o" \
 "CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o" \
@@ -223,11 +266,14 @@ QubitNative_OBJECTS = \
 "CMakeFiles/QubitNative.dir/jni/ShorBridge.cpp.o" \
 "CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o" \
 "CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o" \
-"CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o"
+"CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o" \
+"CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o" \
+"CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o"
 
 # External object files for target QubitNative
 QubitNative_EXTERNAL_OBJECTS =
 
+/home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/core/gates/GateWrapper.cpp.o
 /home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o
 /home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o
 /home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o
@@ -238,10 +284,12 @@ QubitNative_EXTERNAL_OBJECTS =
 /home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/jni/SimonBridge.cpp.o
 /home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/jni/TeleportationBridge.cpp.o
 /home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o
+/home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o
+/home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o
 /home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/build.make
 /home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/compiler_depend.ts
 /home/redhood/quantum-jvm-lib/lib/QubitNative.so: CMakeFiles/QubitNative.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library /home/redhood/quantum-jvm-lib/lib/QubitNative.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/redhood/quantum-jvm-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared library /home/redhood/quantum-jvm-lib/lib/QubitNative.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QubitNative.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
