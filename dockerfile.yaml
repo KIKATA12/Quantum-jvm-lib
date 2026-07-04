@@ -1,0 +1,22 @@
+FROM ubuntu:24.04
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 \
+    PATH=$PATH:/usr/lib/jvm/java-17-openjdk-amd64/bin
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    cmake \
+    openjdk-17-jdk \
+    maven \
+    git \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace
+COPY . /workspace
+
+RUN cmake -S /workspace -B /workspace/build && \
+    cmake --build /workspace/build -j$(nproc)
+
+CMD ["bash"]
