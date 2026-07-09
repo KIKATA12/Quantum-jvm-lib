@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/redhood/quantum-jvm-lib/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
