@@ -1,0 +1,34 @@
+# Build outputs
+/build/
+/target/
+.gradle/
+
+# Native libraries and generated runtime artifacts
+/lib/*.so
+/lib/*.dylib
+/lib/*.dll
+
+# Maven / Java
+*.log
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+# Node/npm
+node_modules/
+package-lock.json
+npm-debug.log
+package.json
+
+# VS Code
+.vscode/
+
+# Misc
+.DS_Store
+*.swp
+*.swo
+/physicsexperimental/
+.prettierignore
+

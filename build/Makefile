@@ -249,6 +249,30 @@ core/registers/QubitRegistry.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.s
 .PHONY : core/registers/QubitRegistry.cpp.s
 
+core/simulator/blochSphere.o: core/simulator/blochSphere.c.o
+.PHONY : core/simulator/blochSphere.o
+
+# target to build an object file
+core/simulator/blochSphere.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/simulator/blochSphere.c.o
+.PHONY : core/simulator/blochSphere.c.o
+
+core/simulator/blochSphere.i: core/simulator/blochSphere.c.i
+.PHONY : core/simulator/blochSphere.i
+
+# target to preprocess a source file
+core/simulator/blochSphere.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/simulator/blochSphere.c.i
+.PHONY : core/simulator/blochSphere.c.i
+
+core/simulator/blochSphere.s: core/simulator/blochSphere.c.s
+.PHONY : core/simulator/blochSphere.s
+
+# target to generate assembly for a file
+core/simulator/blochSphere.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QubitNative.dir/build.make CMakeFiles/QubitNative.dir/core/simulator/blochSphere.c.s
+.PHONY : core/simulator/blochSphere.c.s
+
 jni/GroverBridge.o: jni/GroverBridge.cpp.o
 .PHONY : jni/GroverBridge.o
 
@@ -465,6 +489,9 @@ help:
 	@echo "... core/registers/QubitRegistry.o"
 	@echo "... core/registers/QubitRegistry.i"
 	@echo "... core/registers/QubitRegistry.s"
+	@echo "... core/simulator/blochSphere.o"
+	@echo "... core/simulator/blochSphere.i"
+	@echo "... core/simulator/blochSphere.s"
 	@echo "... jni/GroverBridge.o"
 	@echo "... jni/GroverBridge.i"
 	@echo "... jni/GroverBridge.s"

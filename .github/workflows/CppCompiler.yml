@@ -1,9 +1,9 @@
 name: CppCompiler
-on: 
-   push:
-     branches: ["main"]
-   pull_request:
-     branches: ["main"]
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 jobs:
   build:
     strategy:
@@ -16,14 +16,14 @@ jobs:
       - name: set up jdk 25
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '25'
+          distribution: "temurin"
+          java-version: "25"
       - name: create build directory
         run: mkdir Sharedlib
-        
+
       #- name: windows dependencies
-       # if: matrix.os == 'windows-latest' 
-       # uses: ilammy/msvc-dev-cmd@v1
+      # if: matrix.os == 'windows-latest'
+      # uses: ilammy/msvc-dev-cmd@v1
 
       - name: linux dependencies
         if: matrix.os == 'ubuntu-latest'
@@ -31,16 +31,16 @@ jobs:
 
       - name: Compile qubit sources
         run: |
-           g++ -std=c++17 -fPIC \
-            -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" \
-            -shared core/qubit/Qubit.cpp jni/QubitBridge.cpp core/registers/QubitRegistry.cpp \
-            -o Sharedlib/libQubitNative.so
+          g++ -std=c++17 -fPIC \
+           -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" \
+           -shared core/qubit/Qubit.cpp jni/QubitBridge.cpp core/registers/QubitRegistry.cpp \
+           -o Sharedlib/libQubitNative.so
         if: matrix.os == 'ubuntu-latest'
-           
+
       #- name: compile in windows
-        #run: |
-            # cl /EHsc /std:c++17 /I"%JAVA_HOME\include" /I"%JAVA_HOME\include\win32" /c core\qubit\Qubit.cpp /Fo:build\Qubit.obj
-           #  cl /EHsc /std:c++17 /I"%JAVA_HOME\include" /I"%JAVA_HOME\include\win32" /c jni\QubitBridge.cpp /Fo:build\QubitBridge.obj
+      #run: |
+      # cl /EHsc /std:c++17 /I"%JAVA_HOME\include" /I"%JAVA_HOME\include\win32" /c core\qubit\Qubit.cpp /Fo:build\Qubit.obj
+      #  cl /EHsc /std:c++17 /I"%JAVA_HOME\include" /I"%JAVA_HOME\include\win32" /c jni\QubitBridge.cpp /Fo:build\QubitBridge.obj
       #  if: matrix.os == 'windows-latest'
 
       - name: Build artifacts
@@ -48,5 +48,3 @@ jobs:
         with:
           name: qubit-native-lib
           path: Sharedlib/libQubitNative.so
-     
- 

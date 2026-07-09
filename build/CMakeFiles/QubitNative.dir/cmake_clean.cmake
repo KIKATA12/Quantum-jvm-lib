@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/QubitNative.dir/core/qubit/Qubit.cpp.o.d"
   "CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o"
   "CMakeFiles/QubitNative.dir/core/registers/QubitRegistry.cpp.o.d"
+  "CMakeFiles/QubitNative.dir/core/simulator/blochSphere.c.o"
+  "CMakeFiles/QubitNative.dir/core/simulator/blochSphere.c.o.d"
   "CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o"
   "CMakeFiles/QubitNative.dir/jni/GroverBridge.cpp.o.d"
   "CMakeFiles/QubitNative.dir/jni/HHLBridge.cpp.o"

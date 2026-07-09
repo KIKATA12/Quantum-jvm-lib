@@ -23,6 +23,7 @@ set(REPO_SOURCES
   ${REPO_SOURCES}
   ${CMAKE_CURRENT_SOURCE_DIR}/core/gates/Pauli.c
   ${CMAKE_CURRENT_SOURCE_DIR}/core/gates/Rotation.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/core/simulator/blochSphere.c
 )
 
 add_library(QubitNative SHARED ${REPO_SOURCES})

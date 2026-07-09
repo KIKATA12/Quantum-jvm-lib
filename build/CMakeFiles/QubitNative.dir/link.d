@@ -14,6 +14,7 @@
   CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o \
   CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o \
   CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o \
+  CMakeFiles/QubitNative.dir/core/simulator/blochSphere.c.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -68,6 +69,8 @@ CMakeFiles/QubitNative.dir/jni/VQEBridge.cpp.o:
 CMakeFiles/QubitNative.dir/core/gates/Pauli.c.o:
 
 CMakeFiles/QubitNative.dir/core/gates/Rotation.c.o:
+
+CMakeFiles/QubitNative.dir/core/simulator/blochSphere.c.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
 
