@@ -38,6 +38,17 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
+                    <mainClass><demos class="BlochSphereDemo"></demos></mainClass>
+                    <systemPropertyVariables>
+                    <java.library.path>${project.basedir}/lib</java.library.path>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
                     <executable>java</executable>
                     <arguments>
                         <argument>-Djava.library.path=${project.basedir}/lib</argument>

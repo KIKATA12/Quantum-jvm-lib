@@ -1,13 +1,20 @@
 #pragma once
 
+#ifdef __cplusplus
+#include <complex>
+typedef std::complex<double> Complex;
+#else
 #include <complex.h>
+typedef double complex Complex;
+#endif
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
 
-  typedef struct BlochVector
+
+typedef struct BlochVector
   {
     double x;
     double y;
@@ -16,9 +23,10 @@ extern "C"
 
   typedef struct QubitState
   {
-    double complex alpha;
-    double complex beta;
+    Complex alpha;
+    Complex beta;
   } QubitState;
+
 
   /**
    * Compute Bloch sphere angles and coordinates from a qubit state.
@@ -49,7 +57,7 @@ extern "C"
    *   ρ = |ψ⟩⟨ψ|.
    */
   void bloch_density_matrix_from_state(QubitState state,
-                                       double complex rho[2][2]);
+                                       Complex rho[2][2]);
 
   /**
    * Compute the density matrix directly from a Bloch vector.
@@ -59,7 +67,7 @@ extern "C"
   void bloch_density_matrix_from_vector(double x,
                                         double y,
                                         double z,
-                                        double complex rho[2][2]);
+                                        Complex rho[2][2]);
 
 #ifdef __cplusplus
 }
