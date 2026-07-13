@@ -229,22 +229,23 @@ public class BlochSphereDemo {
     String input = args.length > 0 ? String.join(" ", args) : promptForInput();
     ParsedState state = parseState(input);
 
-    BlochSphere sphere = new BlochSphere();
-    double[] angles = sphere.computeAngles(state.alphaReal, state.alphaImag, state.betaReal, state.betaImag);
-    double[] vector = sphere.computeVector(state.alphaReal, state.alphaImag, state.betaReal, state.betaImag);
-    double[] densityMatrix = sphere.computeDensityMatrix(state.alphaReal, state.alphaImag, state.betaReal, state.betaImag);
+    try (BlochSphere sphere = new BlochSphere()) {
+      double[] angles = sphere.computeAngles(state.alphaReal, state.alphaImag, state.betaReal, state.betaImag);
+      double[] vector = sphere.computeVector(state.alphaReal, state.alphaImag, state.betaReal, state.betaImag);
+      double[] densityMatrix = sphere.computeDensityMatrix(state.alphaReal, state.alphaImag, state.betaReal, state.betaImag);
 
-    System.out.println("Input state: " + input);
-    System.out.println("Alpha: " + formatComplex(state.alphaReal, state.alphaImag));
-    System.out.println("Beta: " + formatComplex(state.betaReal, state.betaImag));
-    System.out.println("Density matrix:");
-    printDensityMatrix(densityMatrix);
-    System.out.println("theta = " + angles[0]);
-    System.out.println("azimuthal = " + angles[1]);
-    System.out.println("x = " + angles[2]);
-    System.out.println("y = " + angles[3]);
-    System.out.println("z = " + angles[4]);
-    System.out.println("Bloch vector: (" + vector[0] + ", " + vector[1] + ", " + vector[2] + ")");
+      System.out.println("Input state: " + input);
+      System.out.println("Alpha: " + formatComplex(state.alphaReal, state.alphaImag));
+      System.out.println("Beta: " + formatComplex(state.betaReal, state.betaImag));
+      System.out.println("Density matrix:");
+      printDensityMatrix(densityMatrix);
+      System.out.println("theta = " + angles[0]);
+      System.out.println("azimuthal = " + angles[1]);
+      System.out.println("x = " + angles[2]);
+      System.out.println("y = " + angles[3]);
+      System.out.println("z = " + angles[4]);
+      System.out.println("Bloch vector: (" + vector[0] + ", " + vector[1] + ", " + vector[2] + ")");
+    }
   }
 
   private static ParsedState parseState(String input) {

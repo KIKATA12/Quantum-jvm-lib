@@ -1,9 +1,10 @@
 package wrappers;
 
-public class BlochSphere {
+public class BlochSphere implements AutoCloseable {
   static {
     System.loadLibrary("QubitNative");
   }
+
 
   public native double[] computeAngles(double alphaReal, double alphaImag,
                                         double betaReal, double betaImag);
@@ -13,4 +14,9 @@ public class BlochSphere {
 
   public native double[] computeDensityMatrix(double alphaReal, double alphaImag,
                                                double betaReal, double betaImag);
+  
+  @Override
+  public void close() {
+    // No resources to release in this wrapper class
+  }
 }

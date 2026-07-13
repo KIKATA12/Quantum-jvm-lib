@@ -14,7 +14,7 @@ JNIEXPORT jdoubleArray JNICALL
 Java_wrappers_BlochSphere_computeAngles(JNIEnv *env, jobject obj,
                                         jdouble alphaReal, jdouble alphaImag,
                                         jdouble betaReal, jdouble betaImag) {
-  QubitState state = {(alphaReal + Complex(alphaImag)), (betaReal + Complex(betaImag))};
+  QubitState state = {Complex(alphaReal, alphaImag), Complex(betaReal, betaImag)};
   BlochTestResult result{};
   bloch_api_compute_result(state, &result);
 
@@ -31,7 +31,7 @@ JNIEXPORT jdoubleArray JNICALL
 Java_wrappers_BlochSphere_computeVector(JNIEnv *env, jobject obj,
                                          jdouble alphaReal, jdouble alphaImag,
                                          jdouble betaReal, jdouble betaImag) {
-  QubitState state = {(alphaReal + Complex(alphaImag)), (betaReal + Complex(betaImag))};
+  QubitState state = {Complex(alphaReal, alphaImag), Complex(betaReal, betaImag)};
   BlochVector vector{};
   bloch_api_compute_vector(state, &vector);
 
@@ -47,10 +47,10 @@ Java_wrappers_BlochSphere_computeVector(JNIEnv *env, jobject obj,
 JNIEXPORT jdoubleArray JNICALL
 Java_wrappers_BlochSphere_computeDensityMatrix(JNIEnv *env, jobject obj,
                                                jdouble alphaReal, jdouble alphaImag,
-                                               jdouble betaReal, jdouble betaImag) {
-  QubitState state = {(alphaReal + Complex(alphaImag)), (betaReal + Complex(betaImag))};
-  Complex rho[2][2] = {{0.0 + 0.0 , 0.0 + Complex(0.0 )},
-                       {0.0 + Complex(0.0), 0.0 + Complex(0.0 )}};
+                                               jdouble betaReal, jdouble betaImag) {                                          
+  QubitState state = {Complex(alphaReal, alphaImag), Complex(betaReal, betaImag)};
+  Complex rho[2][2] = {{Complex(0.0 ,0.0), Complex(0.0,0.0)},
+                       {Complex(0.0,0.0), Complex(0.0,0.0 )}};
   bloch_api_compute_density_matrix(state, rho);
 
   jdouble values[8] = {rho[0][0].real() , rho[0][0].imag(),

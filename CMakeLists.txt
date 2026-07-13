@@ -17,6 +17,7 @@ include_directories(
 
 file(GLOB REPO_SOURCES
   "core/**/*.cpp"
+  "core/**/*.c"
   "jni/*Bridge.cpp"
 )
 
@@ -29,7 +30,6 @@ set(REPO_SOURCES
 
 add_library(QubitNative SHARED ${REPO_SOURCES})
 set_target_properties(QubitNative PROPERTIES
-  PREFIX ""
   OUTPUT_NAME "QubitNative"
   LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/lib"
 )
